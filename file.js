@@ -1,4 +1,5 @@
 
+/// For shifting the buffer //
 const fs = require('fs');
 var shift = require("./shiftbuffer")
 var currStr = process.argv[2];
