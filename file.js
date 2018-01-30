@@ -9,7 +9,7 @@ fs.readFile('./str.txt', (err, data) => {
     if (err) throw err;
     //console.log(data.toString());
     for(i=0;i<5;i++){
-      buffer = shift(data) ;  
+      buffer = shift(data) ; 
       data = buffer;
       fs.appendFile('./str.txt', '\n'+(i+1)+' Attempt: '+buffer.toString(), (err) => {
         if (err) throw err;
